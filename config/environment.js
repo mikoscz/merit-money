@@ -5,6 +5,8 @@ module.exports = function(environment) {
     modulePrefix: 'merit-money',
     podModulePrefix: 'merit-money/pods',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://merit-money-bb.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
